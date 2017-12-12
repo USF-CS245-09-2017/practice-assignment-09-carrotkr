@@ -1,17 +1,15 @@
-
+/**
+ * Practice9Test
+ */
 public class Practice9Test {
-	
-	
 	public Practice9Test() {
 		// TODO: Need to create an instance?
 	}
 	
-
 	public Graph getGraph(int size) {
 		return new GraphAdjMatrix(size);
 	}
 
-	
 	public boolean createGraphTest() {
 		// Just create a graph and expect it not to blow up...
 		try {
@@ -23,7 +21,6 @@ public class Practice9Test {
 		return true;
 	}
 	
-	
 	public boolean addEdgeTest() {
 		Graph g = getGraph(3);
 		
@@ -32,7 +29,6 @@ public class Practice9Test {
 		
 		return g.getEdge(0, 1) == 5 && g.getEdge(0, 2) == 3;
 	}
-	
 	
 	public boolean spanningTreeTest() {
 		Graph g = getGraph(5);
@@ -58,8 +54,7 @@ public class Practice9Test {
 		return true;
 	}
 	
-	
-	public void runTest () {
+	public void runTest() {
 		int grade = 0;
 		
 		if (createGraphTest()) {
@@ -90,5 +85,4 @@ public class Practice9Test {
 		Practice9Test test = new Practice9Test();
 		test.runTest();
 	}
-
 }
